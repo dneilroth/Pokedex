@@ -78,6 +78,7 @@ ul {
   width: 50%;
   float: left;
   border: thin solid blue;
+  position: fixed;
 }
 
 .toy-detail-pane {

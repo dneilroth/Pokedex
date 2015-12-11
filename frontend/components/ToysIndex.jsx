@@ -5,7 +5,7 @@ var ToysIndex = React.createClass({
   mixins: [history],
 
   showToys: function(e){
-    var url = "pokemon/" + this.props.params.pokemonId +
+    var url = "pokemons/" + this.props.params.pokemonId +
               "/toys/" + this.props.params.toyId;
     this.history.push(url);
   },

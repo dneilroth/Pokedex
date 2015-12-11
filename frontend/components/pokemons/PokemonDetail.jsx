@@ -8,12 +8,13 @@ var PokemonDetail = React.createClass({
   },
 
   getStateFromStore: function(){
-      PokemonStore.find(parseInt(this.props.params.pokemonId));
+      return PokemonStore.find(parseInt(this.props.params.pokemonId));
     // debugger;
   },
 
   componentDidMount: function(){
     this.token = PokemonStore.addListener(this._onChange);
+    // get me my toys!
   },
 
   componentWillReceiveProps: function(){
@@ -25,9 +26,7 @@ var PokemonDetail = React.createClass({
   },
 
   _onChange: function(){
-      var getState = PokemonStore.find
-        (parseInt(this.props.params.pokemonId));
-      this.setState({pokemon: getState});
+      this.setState({pokemon: this.getStateFromStore()});
   },
 
   render: function(){

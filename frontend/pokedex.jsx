@@ -8,7 +8,7 @@ var ToyDetail = require('./components/ToyDetail');
 
 document.addEventListener('DOMContentLoaded', function () {
   var routes = (<Route path="/" component={App} >
-      <Route path="pokemons/:pokemonId/" component={PokemonDetail}>
+      <Route path="pokemons/:pokemonId" component={PokemonDetail}>
         <Route path="toys/:toyId" component={ToyDetail} />
       </Route>
     </Route>);
