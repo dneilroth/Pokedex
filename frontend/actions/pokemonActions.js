@@ -17,3 +17,6 @@ var pokemonActions = {
 };
 
 module.exports = pokemonActions;
+
+
+git filter-branch -f --env-filter "GIT_AUTHOR_NAME='David Roth'; GIT_AUTHOR_EMAIL='dneilroth@gmail.com'; GIT_COMMITTER_NAME='David Roth'; GIT_COMMITTER_EMAIL='dneilroth@gmail.com';" HEAD
