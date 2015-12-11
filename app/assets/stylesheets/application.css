@@ -40,7 +40,7 @@ ul {
 #pokedex {
   /* height: 100%; */
   width: 100%;
-  background-color: white;
+  background-color: clear;
 }
 
 #pokedex:after {
@@ -72,13 +72,17 @@ ul {
   width: 33%;
   float: left;
   border: thin solid blue;
+  background: white;
 }
 
 .pokemon-detail-pane {
   width: 50%;
+  height: 300px;
   float: left;
   border: thin solid blue;
   position: fixed;
+  background: white;
+
 }
 
 .toy-detail-pane {
