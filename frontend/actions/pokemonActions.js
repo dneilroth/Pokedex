@@ -6,6 +6,13 @@ var pokemonActions = {
       actionType: "POKEMONS_RECEIVED",
       pokemons: pokemons
     });
+  },
+
+  receiveSinglePokemon: function(pokemon) {
+    Dispatcher.dispatch({
+      actionType: "SINGLE_POKEMON_RECEIVED",
+      pokemon: pokemon
+    });
   }
 };
 

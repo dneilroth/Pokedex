@@ -7,7 +7,14 @@ var apiUtil = {
     });
   },
 
-};
+  fetchPokemon: function(id){
+    var url = 'api/pokemon/' + id;
+    $.get(url, {}, function(pokemon){
+      pokemonActions.receiveSinglePokemon(pokemon);
+    });
+  }
+
+}; 
 
 
 module.exports = apiUtil;
